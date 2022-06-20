@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(187, 190, 98);
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "cabecera" "cuerpo" "pie";
+    gap: 40px;
+}
+
+.cabecera {
+    grid-area: "cabecera";
+}
+
+.cuerpo {
+    grid-area: "cuerpo";
+}
+
+.pie {
+    grid-area: "pie";
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 648px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+/* Es para dejar fija la barra arriba, pero por ahora no lo uso
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+*/
+
+nav {
+    background-color: rgb(78, 78, 150);
+    height: 50px;
+}
+
+nav ul {
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+nav li:hover {
+    background-color: rgb(170, 26, 36);
+    border-style: dotted;
+}
+
+nav li a {
+    font-size: 20px;
+    margin: 5px;
+    color: rgb(12, 143, 209);
+}
+
+nav span {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+}
+
+nav img {
+    display: inline-block;
+    max-width: 2%;
+}
+
+.seccion {
+    margin-top: 100px;
+}
+
+.textoPresentacion {
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+    margin-top: 15%;
+    border-style: double;
+    width: fit-content;
+    display: inline-block;
+}
+
+main article section {
+    text-align: center;
+}
+
+footer {
+    border-style: dotted;
+    border-color: blue;
+    position: absolute;
+    bottom: 0;
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+}
+
+.tituloGaleria {
+    margin-top: 2%;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+}
+
+.elementoGaleria {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.elementoGaleria__cuadroTexto {
+    background-color: beige;
+    padding: 2px 16px;
+}
+
+.elementoGaleria:hover {
+    box-shadow: 0 8px 16px 0 rgba(23, 38, 175, 0.749);
+}
+
+.elementoGaleria a img {
+    height: 250px;
+    width: 250px;
+}
+
+.centrarGaleria {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centrarFormularioContacto {
+    text-align: center;
+}
+
+.boton {
+    border-radius: 10px;
+    margin: 5px;
+    border: 5px dashed;
+}
+
+.centrarSobreNosotros {
+    display: inline;
+    text-align: center;
+}
+
+.nosotrosTexto {
+    float: right;
+    position: relative;
+    top: 200px;
+    right: 50px;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+}
+
+.nosotrosImagen {
+    float: left;
+}
+
+
+/*
+.galeria {
+    display: inline;
+    text-align: center;
+}*/

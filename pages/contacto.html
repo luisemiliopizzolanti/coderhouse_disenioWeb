@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>RetroGamesUY</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <span>RetroGamesUY</span> <img src="/assets/img/mario_bienvendio.png" alt="Mario Bienvenida">
+            <!-- Enlaces de la barra de navegacion -->
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/acerca_de.html">Sobre nosotros</a></li>
+                <li><a href="/pages/galeria_productos.html">Galeria</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+                <li><a href="https://www.instagram.com" target="_blank">Seguinos en Instagram!</a></li>
+            </ul>
+            <!-- Fin de los enlaces de la barra de navegacion  -->
+        </nav>
+        <!-- Fin de la barra de la navegacion  -->
+    </header>
+    <!-- Fin de la cabecera -->
+    <main>
+        <article>
+            <section class="centrarFormularioContacto">
+                <h2>Formulario Contacto</h2>
+                <form>
+                    <label for="nombre">
+                        Nombre
+                        </label>
+                    <br />
+                    <input type="text" id="nombre" />
+                    <br />
+                    <label for="apellido">
+                        Apellido
+                        </label>
+                    <br />
+                    <input type="text" id="apellido" />
+                    <br />
+                    <label for="telefono">
+                        Telefono
+                        </label>
+                    <br />
+                    <input type="tel" id="telefono" placeholder="Ingresa tu telefono" maxlength="10" />
+                    <br />
+                    <label for="correo">
+                        Correo electronico
+                        </label>
+                    <br />
+                    <input type="email" id="correo" placeholder="Ingresa tu correo" />
+                    <br />
+                    <label>
+                        Departamento
+                        </label>
+                    <br />
+                    <select>
+                        <option selected="selected">Departamento</option>
+                        <option>Maldonado</option>
+                        <option>Montevideo</option>
+                        </select>
+                    <br />
+                    <label>
+                        Ya nos habias visitado?
+                        </label>
+                    <br />
+                    <span>Si</span>
+                    <input type="radio" name="opcion" value="Si" />
+                    <span>No</span>
+                    <input type="radio" name="opcion" value="No" />
+                    <br />
+                    <label>
+                            ¿Te gustaria recibir info sobre nuestras promociones?
+                        </label>
+                    <br />
+                    <span>Si</span>
+                    <input type="checkbox" name="aceptar" />
+                    <br />
+                    <label for="consulta">
+                            ¿Cual es la consulta?
+                        </label>
+                    <br />
+                    <textarea id="consulta" rows="10" cols="50"></textarea>
+                    <br />
+                    <input class="boton" type="submit" />
+                    <input class="boton" type="reset" />
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Seguinos en Instagram!</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
