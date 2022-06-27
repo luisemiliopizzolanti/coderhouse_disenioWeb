@@ -6,36 +6,6 @@
 
 body {
     background-color: rgb(187, 190, 98);
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "cabecera" "cuerpo" "pie";
-    gap: 40px;
-}
-
-.cabecera {
-    grid-area: "cabecera";
-}
-
-.cuerpo {
-    grid-area: "cuerpo";
-}
-
-.pie {
-    grid-area: "pie";
-}
-
-nav {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-@media screen and (max-width: 648px) {
-    nav {
-        flex-direction: column;
-    }
 }
 
 
@@ -47,24 +17,14 @@ header {
 }
 */
 
-nav {
-    background-color: rgb(78, 78, 150);
-    height: 50px;
-}
-
-nav ul {
-    display: inline-block;
+.t {
     text-align: right;
-    position: absolute;
     right: 0;
 }
 
 nav li {
-    list-style: none;
-    display: inline-block;
-    height: 50px;
-    display: table-cell;
-    vertical-align: middle;
+    text-align: right;
+    right: 0;
 }
 
 nav li:hover {
@@ -78,14 +38,15 @@ nav li a {
     color: rgb(12, 143, 209);
 }
 
-nav span {
-    font-family: 'Alfa Slab One', cursive;
-    font-size: 40px;
+.logo {
+    display: inline;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
 }
 
-nav img {
-    display: inline-block;
-    max-width: 2%;
+.imgLogo {
+    width: 32px;
+    height: 34px;
 }
 
 .seccion {
@@ -107,16 +68,20 @@ main article section {
     text-align: center;
 }
 
-footer {
+.footer {
     border-style: dotted;
     border-color: blue;
-    position: absolute;
     bottom: 0;
+    position: fixed;
+}
+
+.margen {
+    margin-top: 20px;
 }
 
 footer li {
     list-style: none;
-    display: inline-block;
+    display: inline;
 }
 
 .tituloGaleria {
@@ -143,6 +108,8 @@ footer li {
 .elementoGaleria a img {
     height: 250px;
     width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .centrarGaleria {
@@ -151,7 +118,9 @@ footer li {
 }
 
 .centrarFormularioContacto {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boton {
@@ -168,11 +137,17 @@ footer li {
 .nosotrosTexto {
     float: right;
     position: relative;
-    top: 200px;
     right: 50px;
+    bottom: 33px;
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .nosotrosTexto {
+        top: 200px;
+    }
 }
 
 .nosotrosImagen {
