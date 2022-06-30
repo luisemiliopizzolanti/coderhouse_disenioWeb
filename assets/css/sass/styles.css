@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(187, 190, 98);
+}
+
+/* Es para dejar fija la barra arriba, pero por ahora no lo uso
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+*/
+.t {
+  text-align: right;
+  right: 0;
+}
+
+nav li {
+  text-align: right;
+  right: 0;
+}
+nav li:hover {
+  background-color: rgb(170, 26, 36);
+  border-style: dotted;
+}
+nav li a {
+  font-size: 20px;
+  margin: 5px;
+  color: rgb(12, 143, 209);
+}
+
+/*
+nav li {
+    text-align: right;
+    right: 0;
+}*/
+/*
+nav li:hover {
+    background-color: rgb(170, 26, 36);
+    border-style: dotted;
+}
+*/
+/*
+nav li a {
+    font-size: 20px;
+    margin: 5px;
+    color: rgb(12, 143, 209);
+}*/
+.logo {
+  display: inline;
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+}
+
+.imgLogo {
+  width: 32px;
+  height: 34px;
+}
+
+.seccion {
+  margin-top: 100px;
+}
+
+.textoPresentacion {
+  background-image: linear-gradient(to bottom, red, rgba(121, 33, 101, 0.312));
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 40px;
+  margin-top: 15%;
+  border-style: double;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+}
+
+main article section {
+  text-align: center;
+}
+
+/*
+main article section {
+    text-align: center;
+}
+*/
+.footer {
+  border-style: dotted;
+  border-color: blue;
+  bottom: 0;
+  position: fixed;
+}
+
+.margen {
+  margin-top: 20px;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+}
+
+/*
+footer li {
+    list-style: none;
+    display: inline;
+}
+*/
+.tituloGaleria {
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 25px;
+}
+
+.elementoGaleria {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.elementoGaleria__cuadroTexto {
+  background-color: beige;
+  padding: 2px 16px;
+}
+
+.elementoGaleria:hover {
+  box-shadow: 0 8px 16px 0 rgba(23, 38, 175, 0.749);
+}
+.elementoGaleria a img {
+  height: 250px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+.elementoGaleria:hover {
+    box-shadow: 0 8px 16px 0 rgba(23, 38, 175, 0.749);
+}
+*/
+/*
+.elementoGaleria a img {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+.centrarGaleria {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centrarFormularioContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton {
+  border-radius: 10px;
+  margin: 5px;
+  border: 5px dashed;
+}
+
+.centrarSobreNosotros {
+  display: inline;
+  text-align: center;
+}
+
+.nosotrosTexto {
+  float: right;
+  position: relative;
+  right: 50px;
+  bottom: 33px;
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nosotrosTexto {
+    top: 200px;
+  }
+}
+.nosotrosImagen {
+  float: left;
+}
+
+/*
+.galeria {
+    display: inline;
+    text-align: center;
+}*/
+.mostrar {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=styles.css.map */
