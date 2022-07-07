@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(187, 190, 98);
+  background-color: #bbbe62;
 }
 
 /* Es para dejar fija la barra arriba, pero por ahora no lo uso
@@ -24,14 +24,14 @@ nav li {
   text-align: right;
   right: 0;
 }
+
 nav li:hover {
-  background-color: rgb(170, 26, 36);
+  background-color: #aa1a24;
   border-style: dotted;
 }
 nav li a {
   font-size: 20px;
   margin: 5px;
-  color: rgb(12, 143, 209);
 }
 
 /*
@@ -123,8 +123,8 @@ footer li {
 }
 
 .elementoGaleria__cuadroTexto {
-  background-color: beige;
   padding: 2px 16px;
+  background-color: beige;
 }
 
 .elementoGaleria:hover {

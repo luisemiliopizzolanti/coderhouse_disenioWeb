@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(187, 190, 98);
+    background-color: #bbbe62;
 }
 
 
@@ -28,14 +28,14 @@ nav li {
 }
 
 nav li:hover {
-    background-color: rgb(170, 26, 36);
+    background-color: #aa1a24;
     border-style: dotted;
 }
 
 nav li a {
     font-size: 20px;
     margin: 5px;
-    color: rgb(12, 143, 209);
+    /*color: #0c8fd1;*/
 }
 
 .logo {
@@ -54,7 +54,7 @@ nav li a {
 }
 
 .textoPresentacion {
-    background-image: linear-gradient(to bottom, red, rgba(121, 33, 101, 0.312));
+    background-image: linear-gradient(to bottom, #ff0000, #79216550);
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
     font-size: 40px;
@@ -70,7 +70,7 @@ main article section {
 
 .footer {
     border-style: dotted;
-    border-color: blue;
+    border-color: #0000ff;
     bottom: 0;
     position: fixed;
 }
@@ -102,7 +102,7 @@ footer li {
 }
 
 .elementoGaleria:hover {
-    box-shadow: 0 8px 16px 0 rgba(23, 38, 175, 0.749);
+    box-shadow: 0 8px 16px 0 #1726afbf;
 }
 
 .elementoGaleria a img {

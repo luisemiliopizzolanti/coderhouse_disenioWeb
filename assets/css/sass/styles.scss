@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
+$colores: ( colorFondo: #bbbe62, colorBotonNavHover: #aa1a24);
 body {
-    background-color: rgb(187, 190, 98);
+    background-color: map-get($colores, colorFondo);
 }
 
 
@@ -22,18 +23,21 @@ header {
     right: 0;
 }
 
+%alineacionDerecha {
+    text-align: right;
+    right: 0;
+}
+
 nav {
     li {
-        text-align: right;
-        right: 0;
+        @extend %alineacionDerecha;
         &:hover {
-            background-color: rgb(170, 26, 36);
+            background-color: map-get($colores, colorBotonNavHover);
             border-style: dotted;
         }
         a {
             font-size: 20px;
             margin: 5px;
-            color: rgb(12, 143, 209);
         }
     }
 }
@@ -61,9 +65,13 @@ nav li a {
     color: rgb(12, 143, 209);
 }*/
 
+@mixin fuenteLogo {
+    font-family: 'Press Start 2P', cursive;
+}
+
 .logo {
     display: inline;
-    font-family: 'Press Start 2P', cursive;
+    @include fuenteLogo();
     font-size: 30px;
 }
 
@@ -141,8 +149,8 @@ footer li {
 }
 
 .elementoGaleria__cuadroTexto {
-    background-color: beige;
     padding: 2px 16px;
+    background-color: beige;
 }
 
 .elementoGaleria {
