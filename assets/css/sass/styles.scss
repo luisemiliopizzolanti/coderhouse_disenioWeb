@@ -9,15 +9,6 @@ body {
     background-color: map-get($colores, colorFondo);
 }
 
-
-/* Es para dejar fija la barra arriba, pero por ahora no lo uso
-header {
-    position: fixed;
-    right: 0;
-    left: 0;
-}
-*/
-
 .t {
     text-align: right;
     right: 0;
@@ -41,29 +32,6 @@ nav {
         }
     }
 }
-
-
-/*
-nav li {
-    text-align: right;
-    right: 0;
-}*/
-
-
-/*
-nav li:hover {
-    background-color: rgb(170, 26, 36);
-    border-style: dotted;
-}
-*/
-
-
-/*
-nav li a {
-    font-size: 20px;
-    margin: 5px;
-    color: rgb(12, 143, 209);
-}*/
 
 @mixin fuenteLogo {
     font-family: 'Press Start 2P', cursive;
@@ -103,13 +71,6 @@ main {
     }
 }
 
-
-/*
-main article section {
-    text-align: center;
-}
-*/
-
 .footer {
     border-style: dotted;
     border-color: blue;
@@ -127,14 +88,6 @@ footer {
         display: inline;
     }
 }
-
-
-/*
-footer li {
-    list-style: none;
-    display: inline;
-}
-*/
 
 .tituloGaleria {
     margin-top: 2%;
@@ -166,23 +119,6 @@ footer li {
         }
     }
 }
-
-
-/*
-.elementoGaleria:hover {
-    box-shadow: 0 8px 16px 0 rgba(23, 38, 175, 0.749);
-}
-*/
-
-
-/*
-.elementoGaleria a img {
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-*/
 
 .centrarGaleria {
     margin-left: auto;
@@ -225,13 +161,6 @@ footer li {
 .nosotrosImagen {
     float: left;
 }
-
-
-/*
-.galeria {
-    display: inline;
-    text-align: center;
-}*/
 
 .mostrar {
     animation-duration: 3s;
