@@ -72,10 +72,10 @@ main {
 }
 
 .footer {
+    margin-top: 10px;
     border-style: dotted;
     border-color: blue;
     bottom: 0;
-    position: fixed;
 }
 
 .margen {
@@ -155,6 +155,12 @@ footer {
 @media only screen and (min-width: 768px) {
     .nosotrosTexto {
         top: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .imgLogo {
+        display: none;
     }
 }
 

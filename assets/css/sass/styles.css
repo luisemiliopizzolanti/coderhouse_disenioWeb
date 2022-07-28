@@ -8,13 +8,6 @@ body {
   background-color: #bbbe62;
 }
 
-/* Es para dejar fija la barra arriba, pero por ahora no lo uso
-header {
-    position: fixed;
-    right: 0;
-    left: 0;
-}
-*/
 .t {
   text-align: right;
   right: 0;
@@ -34,23 +27,6 @@ nav li a {
   margin: 5px;
 }
 
-/*
-nav li {
-    text-align: right;
-    right: 0;
-}*/
-/*
-nav li:hover {
-    background-color: rgb(170, 26, 36);
-    border-style: dotted;
-}
-*/
-/*
-nav li a {
-    font-size: 20px;
-    margin: 5px;
-    color: rgb(12, 143, 209);
-}*/
 .logo {
   display: inline;
   font-family: "Press Start 2P", cursive;
@@ -83,16 +59,11 @@ main article section {
   text-align: center;
 }
 
-/*
-main article section {
-    text-align: center;
-}
-*/
 .footer {
+  margin-top: 10px;
   border-style: dotted;
   border-color: blue;
   bottom: 0;
-  position: fixed;
 }
 
 .margen {
@@ -104,12 +75,6 @@ footer li {
   display: inline;
 }
 
-/*
-footer li {
-    list-style: none;
-    display: inline;
-}
-*/
 .tituloGaleria {
   margin-top: 2%;
   text-align: center;
@@ -137,19 +102,6 @@ footer li {
   margin-right: auto;
 }
 
-/*
-.elementoGaleria:hover {
-    box-shadow: 0 8px 16px 0 rgba(23, 38, 175, 0.749);
-}
-*/
-/*
-.elementoGaleria a img {
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-*/
 .centrarGaleria {
   margin-left: auto;
   margin-right: auto;
@@ -187,15 +139,15 @@ footer li {
     top: 200px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .imgLogo {
+    display: none;
+  }
+}
 .nosotrosImagen {
   float: left;
 }
 
-/*
-.galeria {
-    display: inline;
-    text-align: center;
-}*/
 .mostrar {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
