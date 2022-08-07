@@ -171,4 +171,28 @@ footer li {
   100% {
     opacity: 1;
   }
+}
+.textoServiciosTitulo {
+  text-align: center;
+}
+
+.textoServiciosCuerpo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.textoParrafoServicios {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-style: dotted;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.imagenServicios {
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */

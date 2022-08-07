@@ -181,3 +181,30 @@ footer {
         opacity: 1;
     }
 }
+
+@mixin textoServicios {
+    text-align: center;
+}
+
+.textoServiciosTitulo {
+    @include textoServicios();
+}
+
+.textoServiciosCuerpo {
+    @include textoServicios();
+    margin-top: 20px;
+}
+
+.textoParrafoServicios {
+    width: fit-content;
+    border-style: dotted;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.imagenServicios {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
